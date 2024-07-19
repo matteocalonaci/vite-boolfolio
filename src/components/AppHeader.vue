@@ -4,16 +4,7 @@ export default {
     name: "AppHeader",
     data() {
         return {
-            links: [
-                {
-                    text: "Home",
-                    url: "#home",
-                },
-                {
-                    text: "Projects",
-                    url: "#projects",
-                },
-            ]
+           
         }
 
     }
@@ -36,8 +27,10 @@ export default {
                 <div class="col-3"></div>
                 <div class="col-8 d-flex justify-content-end">
                     <div class="nav">
-                        <a v-for="link in links" :href="link.url"><b>{{ link.text }}</b></a>
-
+                        <!-- <a v-for="link in links" :href="link.url"><b>{{ link.text }}</b></a> -->
+                          <router-link :to="{ name:'AppHome'}">Home</router-link>
+                          <router-link :to="{ name:'ProjectCards'}">Projects</router-link>
+                      
                     </div>
                 </div>
             </div>

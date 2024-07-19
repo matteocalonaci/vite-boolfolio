@@ -1,12 +1,12 @@
 <script>
-import ProjectCard from './components/ProjectCard.vue';
 import AppHeader from './components/AppHeader.vue';
+import ProjectCards from './views/ProjectCards.vue';
 export default {
   name: 'App',
 
   components:{
     AppHeader,
-    ProjectCard
+    ProjectCards
   },
 
   data() {
@@ -27,11 +27,10 @@ export default {
 
 <template>
 <AppHeader/>
-<ProjectCard/>
-<router-view></router-view>
+<router-view/>
 
 </template>
 
-<style scoped>
+<style scoped> 
 
 </style>
