@@ -1,7 +1,7 @@
 <script>
 import axios from 'axios';
 export default {
-  name: 'ProjectCard',
+  name: 'ProjectCards',
 
 
   data() {
@@ -45,6 +45,7 @@ export default {
 
             <p class="card-text text-start pt-3"><b>Description</b>: {{ project.description }}</p>
             <p class="card-text text-start p-1"><b>Type</b>: {{ project.type_id }}</p>
+            
           </div>
         </div>
       </div>
