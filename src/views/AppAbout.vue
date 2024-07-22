@@ -20,10 +20,11 @@ export default {
 <div class="card">
     <col-5>
     <p>
-        Mi presento, sono Matteo Calonaci sono nato l'8/10/1994 sono di Firenze e sono colui che ha realizzato questo progetto.
-        Sono un appassionato di tecnologia e di informatica, e ho deciso
+        Salve a tutti, mi presento, sono Matteo Calonaci.
+        Sono nato l'08/10/1994 sono di Firenze e sono colui che ha realizzato questo progetto.
+        Sono un appassionato di tecnologia e di informatica, ho deciso
         di realizzare questo sito per poter mostrare le mie competenze e le mie conoscenze
-        in ambito tecnologico apprese durante questi mesi del cordo di Boolean.
+        in ambito tecnologico apprese durante questi mesi durante il corso di Boolean.
     </p>
 </col-5>
 <col-6 class="d-flex justify-content-center align-items-center m-0">
