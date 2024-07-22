@@ -1,5 +1,7 @@
 <script>
 import axios from 'axios';
+import { RouterLink } from 'vue-router';
+
 export default {
   name: 'ProjectCards',
 
@@ -45,6 +47,8 @@ export default {
 
             <p class="card-text text-start pt-3"><b>Description</b>: {{ project.description }}</p>
             <p class="card-text text-start p-1"><b>Type</b>: {{ project.type_id }}</p>
+
+            <RouterLink :to="{ name: 'project' , params: { id: project.id }}" class="btn btn-primary">Info</RouterLink>
             
           </div>
         </div>

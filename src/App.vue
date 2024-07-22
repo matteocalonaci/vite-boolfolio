@@ -1,14 +1,13 @@
 
 <script>
 import AppHeader from './components/AppHeader.vue';
-import ProjectCards from './views/ProjectCards.vue';
 
 export default {
   name: 'AppHome',
 
   components:{
     AppHeader,
-    ProjectCards
+    
   },
 
   data() {

@@ -5,6 +5,8 @@ import ProjectCards from "./views/ProjectCards.vue";
 import SingleProject from "./views/SingleProject.vue";
 import AppAbout from './views/AppAbout.vue';
 import AppContact from './views/AppContact.vue';
+import Not_found from "./views/Not_found.vue";
+
 const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -19,7 +21,7 @@ const router = createRouter({
             component: ProjectCards
         },
         {
-            path: '/singleProject',
+        path: '/projectCards/:id?',
             name: 'project',
             component: SingleProject
         },
@@ -32,6 +34,16 @@ const router = createRouter({
             path: '/contact',
             name: 'contact',
             component: AppContact
+        },
+        {
+            path: '/not_found',
+            name: 'not_found',
+            component: AppContact
+        },
+        {
+            path: '/not_found',
+            name: 'not_found',
+            component: Not_found
         },
 
     ]
