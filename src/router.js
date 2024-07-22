@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import AppHome from './views/AppHome.vue';
 import ProjectCards from "./views/ProjectCards.vue";
+import SingleProject from "./views/SingleProject.vue";
 import AppAbout from './views/AppAbout.vue';
 import AppContact from './views/AppContact.vue';
 const router = createRouter({
@@ -16,6 +17,11 @@ const router = createRouter({
             path: '/projectCards',
             name: 'ProjectCards',
             component: ProjectCards
+        },
+        {
+            path: '/singleProject',
+            name: 'project',
+            component: SingleProject
         },
         {
             path: '/about',

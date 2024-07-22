@@ -4,7 +4,7 @@ import AppHeader from './components/AppHeader.vue';
 import ProjectCards from './views/ProjectCards.vue';
 
 export default {
-  name: 'AppHom',
+  name: 'AppHome',
 
   components:{
     AppHeader,

@@ -24,11 +24,12 @@ export default {
                         <img src="../assets/mc.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-2"></div>
-                <div class="col-9 d-flex justify-content-end">
+                <div class="col-1"></div>
+                <div class="col-10 d-flex justify-content-end">
                     <div class="nav">
                           <router-link :to="{ name:'AppHome'}">Home</router-link>
                           <router-link :to="{ name:'ProjectCards'}">Projects</router-link>
+                          <router-link :to="{ name:'project'}">Single Project</router-link>
                           <router-link :to="{ name:'about'}">About</router-link>
                           <router-link :to="{ name:'contact'}">Contact</router-link>
                       
@@ -46,10 +47,6 @@ export default {
 
 <!-- CSS -->
 <style scoped>
-header {
-    height: 5.6rem;
-}
-
 nav {
     display: flex;
     justify-content: center;

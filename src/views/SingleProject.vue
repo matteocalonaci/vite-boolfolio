@@ -1,7 +1,7 @@
 <!-- JS -->
 <script>
 export default {
-    name: "AppContact",
+    name: "SingleProject",
     data() {
         return {
            
@@ -15,7 +15,7 @@ export default {
 
 <!-- HTML -->
 <template>
-Contact
+Single Project
 
 </template>
 
