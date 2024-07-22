@@ -2,8 +2,9 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import ProjectCards from './views/ProjectCards.vue';
+
 export default {
-  name: 'AppHome',
+  name: 'AppHom',
 
   components:{
     AppHeader,

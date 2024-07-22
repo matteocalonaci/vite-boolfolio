@@ -24,15 +24,17 @@ export default {
                         <img src="../assets/mc.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-3"></div>
-                <div class="col-8 d-flex justify-content-end">
+                <div class="col-2"></div>
+                <div class="col-9 d-flex justify-content-end">
                     <div class="nav">
-                        <!-- <a v-for="link in links" :href="link.url"><b>{{ link.text }}</b></a> -->
                           <router-link :to="{ name:'AppHome'}">Home</router-link>
                           <router-link :to="{ name:'ProjectCards'}">Projects</router-link>
+                          <router-link :to="{ name:'about'}">About</router-link>
+                          <router-link :to="{ name:'contact'}">Contact</router-link>
                       
                     </div>
                 </div>
+                
             </div>
         </div>
 
