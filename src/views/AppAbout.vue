@@ -17,8 +17,9 @@ export default {
 <template>
 <h1>About Me</h1>
 
-<div class="card">
-    <col-5>
+<div class="card m-4">
+    <col-6 class="p-4">
+    <h5>About me</h5>
     <p>
         Salve a tutti, mi presento, sono Matteo Calonaci.
         Sono nato l'08/10/1994 sono di Firenze e sono colui che ha realizzato questo progetto.
@@ -26,8 +27,8 @@ export default {
         di realizzare questo sito per poter mostrare le mie competenze e le mie conoscenze
         in ambito tecnologico apprese durante questi mesi durante il corso di Boolean.
     </p>
-</col-5>
-<col-6 class="d-flex justify-content-center align-items-center m-0">
+</col-6>
+<col-6 class="d-flex justify-content-center align-items-center m-0 p-4">
 <div class="card-img">
 <img src="../assets/kira_ed_io.jpg" alt="">
 </div>
