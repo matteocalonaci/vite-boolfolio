@@ -13,6 +13,15 @@ export default {
     }
   },
 
+  methods: {
+        pageController(url) {
+            if (url != null) {
+                axios.get(url).then(result => {
+                    this.projects = result.data.projects
+                })
+            }
+        }
+    },
 
   mounted() {
 
@@ -30,7 +39,12 @@ export default {
 
 <template>
   <h1 class="p-4">ProjectCard</h1>
+
   <div class="container">
+    <ul class="pagination">
+                <li class="page-item my_cursor-pointer" @click="pageController(item.url)" v-for="item in projects.links"><a
+                        class="page-link" v-html="item.label"></a></li>
+            </ul>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
       <div class="col" v-for="project in projects.data">
         <div class="card h-100">
