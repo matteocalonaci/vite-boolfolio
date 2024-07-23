@@ -36,15 +36,12 @@ const router = createRouter({
             component: AppContact
         },
         {
-            path: '/not_found',
-            name: 'not_found',
-            component: AppContact
-        },
-        {
-            path: '/not_found',
+            // path: '/:pathMatch(.*)*',
+            path: '/:pathMatch(.*)*',
             name: 'not_found',
             component: Not_found
         },
+       
 
     ]
 
