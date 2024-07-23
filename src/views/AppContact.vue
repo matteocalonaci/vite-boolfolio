@@ -1,10 +1,38 @@
 <!-- JS -->
 <script>
+import axios from 'axios';
 export default {
     name: "AppContact",
     data() {
         return {
+            // base_url: 'http://localhost:8000',
+            name: '',
+            email: '',
+            message: '',
+            errors: '',
+            success: false
+        }
+    },
+    methods: {      
+        sendMessage() {
 
+            //preparare la richiesta
+            const data = 
+            {
+                name: this.name,
+                email: this.email,
+                message: this.message
+            }
+            console.log(data);
+
+            //chiamata axios
+            axios
+            .post('http://localhost:8000/api/lead', data)
+            .then(response => {
+                console.log(response);
+            })
+
+            //gestire il response
         }
 
     }
@@ -24,29 +52,32 @@ export default {
                 where they are on your site.</p>
         </div>
         <div class="col-6 p-4">
-            <form>
+            <form @submit.prevent="sendMessage()">
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="">
-        
+                    <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId"
+                        placeholder="" v-model="name">
+
                     <small id="nameHelper" class="form-text text-muted">Write your name</small>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="">
-        
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="helpId"
+                        placeholder="" v-model="email">
+
                     <small id="emailHelper" class="form-text text-muted">Write your email</small>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
-                    <textarea type="text" class="form-control" name="message" id="message" rows="3" placeholder="">
-                        
+                    <textarea type="text" class="form-control" name="message" id="message" rows="3" placeholder=""
+                        v-model="message">
+
                     </textarea>
-        
+
                     <small id="messageHelper" class="form-text text-muted">Write your email text</small>
                 </div>
                 <button type="submit" class="btn btn-primary">
-    SEND
+                    SEND
                 </button>
             </form>
         </div>
@@ -64,5 +95,5 @@ export default {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    }
+}
 </style>
