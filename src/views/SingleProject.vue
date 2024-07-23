@@ -18,7 +18,7 @@ export default {
             if(response.data.success){
             this.projects = response.data.projects
         }else{
-            this.$router.push({name:'Not_found'});
+            this.$router.push({name:'not_found'});
         }
         })
     }

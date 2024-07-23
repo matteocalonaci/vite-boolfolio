@@ -1,7 +1,7 @@
 <!-- JS -->
 <script>
 export default {
-    name: "Not_found",
+    name: "not_found",
     data() {
         return {
            
@@ -15,12 +15,28 @@ export default {
 
 <!-- HTML -->
 <template>
-Error 404 page not found
+>
+<p class="mt-5"><b>ERROR 404 PAGE NOT FOUND</b>
+</p>
 
+
+<div>
+<button>
+    <router-link :to="{ name:'ProjectCards'}" class="text-white">Torna a Projects</router-link>
+</button>
+
+</div>
 </template>
 
 
 <!-- CSS -->
 <style scoped>
+p{
+    font-size: 5rem;
+    padding: 2rem;
+}
 
+button{
+    background-color: rgb(24, 55, 255);
+}
 </style>
